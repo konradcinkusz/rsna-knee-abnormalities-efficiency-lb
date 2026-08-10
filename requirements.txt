@@ -1,0 +1,24 @@
+# RSNA Knee Abnormality Detection — zależności
+# Większość z tego jest już preinstalowana w standardowym Kaggle Notebook
+# (torch, pandas, numpy, scikit-learn, matplotlib) — poniższe pip install
+# potrzebne są głównie do obsługi DICOM (transfer syntaxes) i multilingual NLP.
+
+torch>=2.1
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+matplotlib>=3.7
+
+# DICOM — obsługa mieszanych transfer syntaxes (README sekcja 4):
+# uncompressed Explicit VR LE, JPEG Lossless, JPEG 2000, Implicit VR LE
+pydicom>=2.4
+pylibjpeg>=2.0
+pylibjpeg-libjpeg>=2.1
+pylibjpeg-openjpeg>=2.1
+
+# Text branch — multilingual sentence encoder (lokalny, offline — README sekcja 7)
+sentence-transformers>=2.2
+transformers>=4.35
+
+# Opcjonalnie, do EDA języków raportów (README sekcja 8 — liczba języków nieznana)
+langdetect>=1.0.9
