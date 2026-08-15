@@ -1,0 +1,24 @@
+# Surowe dane konkursu — pobierane przez Kaggle CLI, nie commitowane
+# (patrz download_data.md, sekcja 6)
+data/
+artifacts/
+*.dcm
+*.npz
+*.pt
+*.pth
+*.ckpt
+
+# Artefakty runów (train.py / diagnostics.py uruchamiane lokalnie)
+checkpoints/
+diagnostics/
+
+# Sekrety
+kaggle.json
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
